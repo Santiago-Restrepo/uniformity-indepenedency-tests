@@ -9,7 +9,7 @@ export const chisquareSlice = createSlice({
     name: 'chisquare',
     initialState,
     reducers: {
-        setData: (state, action: PayloadAction<number[]>) => {
+        setData: (state, action: PayloadAction<string[]>) => {
             state.data = action.payload
         },
         setValue: (state, action: PayloadAction<Value>) => {
@@ -20,5 +20,5 @@ export const chisquareSlice = createSlice({
 })
 
 
-export const { setData } = chisquareSlice.actions;
+export const { setData, setValue } = chisquareSlice.actions;
 export default chisquareSlice.reducer;
